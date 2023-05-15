@@ -22,3 +22,4 @@
 
 // To connect the node app with mongodb database
 const mongodb = require("mongodb");
+const MongoClient = mongodb.MongoClient
