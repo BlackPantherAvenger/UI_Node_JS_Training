@@ -1,0 +1,11 @@
+<main>
+  {{#if hasUsers}}
+    <ul>
+      {{#each usersData}}
+        <li>{{this.username}}</li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p>No Users</p>
+  {{/if}}
+</main>

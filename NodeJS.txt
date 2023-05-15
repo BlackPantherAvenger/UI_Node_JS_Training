@@ -1,0 +1,18 @@
+# Commands
+
+1.  npm install nodemon --save-dev -> to install nodemon package in a project to run a start and refresh the server without restarting it.
+2.  npm run <any script text/command> -> to run any command which is declare under the script object of package.json file.
+3.  npm install nodemon -g -> to install special kind of nodemon package which is use to run while the debugger is running.
+4.  npm install --save express -> to install the express JS in a project.
+5.  npm install --save body-parser -> to install the body-parser in a project.
+6.  npm install --save ejs pug express-handlerbars -> to install ejs, pug and handlerbar templating engines packages in a project.
+7.  npm install pug -> to install pug templating engines packages in a project.
+8.  npm install --save express-handlerbars@3.0 -> to install handlerbar templating engines packages in a project.
+9.  npm install pug -g -> to install pug templating engines packages in a project.
+10. npm i ejs -> to install ejs templating engines packages in a project.
+11. npm i handlerbars -> to install handlerbar templating engines packages in a project.
+12. npm install --save mysql2 -> to install mysql package to connect node js app to MySQL database.
+13. npm install --save sequelize -> to install sequelize package to run sequelize database query.
+14. npm install formidable -> to install formidable package which is use to upload the file.
+15. npm install nodemailer -> to install nodemailer package which makes it easy to send emails from your computer.
+16. npm install --save mongodb -> to install mongodb package in our project to connect mongodb to our project.
