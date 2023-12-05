@@ -9,11 +9,13 @@ const rootDir = require("./util/path");
 
 // to import database js
 // const db = require("./util/database");
+//To import mongoDB database JS
+const mongoConnect = require("./util/database")
 
 // const sequelize = require("./util/database");
-const User = require("./models/user");
-const adminRouter = require("./routers/admin");
-const shopRouter = require("./routers/shop");
+// const User = require("./models/user");
+// const adminRouter = require("./routers/admin");
+// const shopRouter = require("./routers/shop");
 const errorController = require("./controllers/error");
 // const Product = require("./models/products");
 // const Cart = require("./models/cart");
@@ -59,11 +61,18 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/admin", adminRouter.routes);
-app.use(shopRouter);
+// app.use("/admin", adminRouter.routes);
+// app.use(shopRouter);
 
 app.use(errorController.get404Page);
-const server = http.createServer(app);
+
+mongoConnect((client)=>{
+  console.log(client)
+  app.listen(3000);
+})
+
+
+// const server = http.createServer(app);
 // console.log(routes.someText)
 
 // to start node js server
