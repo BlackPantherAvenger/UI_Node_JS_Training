@@ -24,7 +24,7 @@
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
 const url =
-  "mongodb+srv://testUser:Sufi123456@cluster0.0cvjgpw.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://sufiUser:Sufi123456@cluster0.0cvjgpw.mongodb.net/?retryWrites=true&w=majority";
 
 const MongoConnect = (callback) => {
   MongoClient.connect(url)
