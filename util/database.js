@@ -22,4 +22,17 @@
 
 // To connect the node app with mongodb database
 const mongodb = require("mongodb");
-const MongoClient = mongodb.MongoClient
+const MongoClient = mongodb.MongoClient;
+const url =
+  "mongodb+srv://testUser:Sufi123456@cluster0.0cvjgpw.mongodb.net/?retryWrites=true&w=majority";
+
+const MongoConnect = (callback) => {
+  MongoClient.connect(url)
+    .then((client) => {
+      console.log("Connected!!");
+      callback(client);
+    })
+    .catch((err) => console.log("err-database",err));
+};
+
+module.exports = MongoConnect
